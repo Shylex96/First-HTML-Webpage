@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="html, css, javascript, aprender" />
+	<meta name="description" content="Página de práctica para aprender HTML básico. Luego progreguir por CSS y JS" />
+	<meta name="author" content="Esteban Albarrán" />
+	<meta name="copyright" content="" />
+	<meta name="robots" content="noindex" />
+	<link rel="icon" type="image/png" href="">
+	<link rel="stylesheet" type="text/css" href="" />
+	<title>Learning HTML</title>
+</head>
+
+<body>
+	<h1>Página de práctica general</h1>
+	<h2>Prácticas de lo aprendido</h2>
+	<hr />
+
+	<!--Hacer otro href _blank con despliegue <header> <nav> <ul> <li>-->
+	<!--El efecto es el mismo que sin meterlo en <header> e indexarlo en <nav>-->
+
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio de página</a></li>
+				<br />
+				<li><a href="practicaimg.html">Práctica de img</a></li>
+				<br />
+				<li><a href="https://www.youtube.com/" target="_blank">Enlace externo (YouTube)</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<hr> <br />
+	<p><strong>Barra de progreso en HTML</strong></p>
+	<progress id="staticBar" min="0" max="100" value="65"></progress> <br /> <br />
+	<hr> <br />
+
+	<!--Horarios de semana de estudio-->
+
+	<p>En esta página <i><b>(la principal)</b></i> voy a estar probando y practicando lo aprendido hasta el momento,
+		como serían
+		el uso de <b>tablas y formularios</b>, o los párrafos como este. Saltos de línea, separaciones, tipografía,
+		inputs y
+		demás cosas en el código que no son vistas a nivel usuario.</p>
+	<p>Por ahora empezaré con la prueba de una tabla simple e iré evolucionandola conforme lo aprendido.</p>
+
+	<div class="section">
+		<h1><span>Horarios de semana</span></h1>
+		<h3><span><i>Prueba de tabla (1)</i></span></h3>
+		<table class="default">
+			<tr>
+				<th scope="row">Horario</th>
+				<th>Lunes</th>
+				<th>Martes</th>
+				<th>Miércoles</th>
+				<th>Jueves</th>
+				<th>Viernes</th>
+			</tr>
+			<tr>
+				<th>8:00-08:30</td>
+				<td>Breakfast</td>
+				<td>Free</td>
+				<td>Free</td>
+				<td>Breakfast</td>
+				<td>Breakfast</td>
+			</tr>
+			<tr>
+				<th>8:30-09:30</td>
+				<td>Study</td>
+				<td>Free</td>
+				<td>Free</td>
+				<td>Practice</td>
+				<td>Practice</td>
+			</tr>
+			<tr>
+				<th>09:30-10:30</td>
+				<td>Study</td>
+				<td>Free</td>
+				<td>Free</td>
+				<td>Practice</td>
+				<td>Practice</td>
+			</tr>
+			<tr>
+				<th>10:30-11:30</td>
+				<td>Practice</td>
+				<td>Free</td>
+				<td>Free</td>
+				<td>Practice</td>
+				<td>Practice</td>
+			</tr>
+			<tr>
+				<th>11:30-12:30</td>
+				<td>Practice</td>
+				<td>Free</td>
+				<td>Free</td>
+				<td>Practice</td>
+				<td>Practice</td>
+			</tr>
+			<tr>
+				<th>12:30-13:30</td>
+				<td>Practice</td>
+				<td>Free</td>
+				<td>Free</td>
+				<td>Practice</td>
+				<td>Practice</td>
+			</tr>
+		</table>
+	</div>
+	<hr>
+
+	<!--Probando una tabla con colspan y rowspan-->
+
+	<div class="section">
+		<h1><span>Horarios de semana</span></h1>
+		<h3><span><i>Prueba de tabla (2)</i></span></h3>
+		<table style="text-align:center;" border="5" class="default">
+			<tr>
+				<th>Horario</th>
+				<th>Lunes</th>
+				<th>Martes</th>
+				<th>Miércoles</th>
+				<th>Jueves</th>
+				<th>Viernes</th>
+			</tr>
+			<tr>
+				<th>8:00-8:30</th>
+				<td>Null</td>
+				<td colspan="2">Free</td>
+				<td colspan="2">Breakfast</td>
+			</tr>
+			<tr>
+				<th>8:30-9:30</th>
+				<td>Breakfast</td>
+				<td colspan="2">Free</td>
+				<td rowspan="2">Practice HTML</td>
+				<td rowspan="3">Study CSS</td>
+			</tr>
+			<tr>
+				<th>9:30-10:30</th>
+				<td>Study HTML</td>
+				<td colspan="2">Free</td>
+			</tr>
+			<tr>
+				<th>10:30-11:30</th>
+				<td rowspan="3">Practice HTML</td>
+				<td colspan="2">Free</td>
+				<td rowspan="3">Study CSS</td>
+			</tr>
+			<tr>
+				<th>11:30-12:30</th>
+				<td colspan="2">Free</td>
+				<td rowspan="2">Practice CSS</td>
+			</tr>
+			<tr>
+				<th>12:30-13:30</th>
+				<td colspan="2">Free</td>
+			</tr>
+			<tr>
+				<th>13:30-14:30</th>
+				<td colspan="5">Lunch Break</td>
+			</tr>
+			<tr>
+				<th>14:30-16:30</th>
+				<td>Practice and review of the day's content</td>
+				<td colspan="2">Free</td>
+				<td colspan="2">Practice and review of the day's content</td>
+			</tr>
+		</table>
+	</div>
+	<hr>
+	<p>Intentar utilizar CSS en la próxima tabla para dar diferentes estilos y que luzca
+		de una forma más profesional.</p>
+
+	<!--Seguir practicando tablas aquí-->
+
+	<hr>
+
+	<!--Práctica de formularios-->
+	<p>En este apartado intentaré controlar los formularios, creando distintos tipos de ellos, con sus respectivas
+		opciones
+		así como descripción de cada uno, tamaños, tipos, haciendo uso de los placeholders para ayudar a rellenarlos,
+		etc.</p>
+	<p>También aprenderé como usar los inputs y crear botones.</p>
+	</p>
+	<div>
+		<h1>Práctica de Formularios</h1>
+		<h3><i>Formularios (1)</i></h3>
+		<form>
+			<input type="text" name="texto" value="Rellena todos los campos de abajo" size="30" readonly>
+			<p>Nombre: <input type="text" name="nombre" size="20" placeholder="Escriba su nombre" required></p>
+
+			<p>Apellidos: <input type="text" name="apellidos" size="30" placeholder="Escriba sus dos apellidos"
+					required></p>
+
+			<p>Fecha de nacimiento<input type="date" name="fecha"></p>
+
+			<p>Edad: <input type="number" name="edad" size="5" placeholder="Seleccione su edad" min="18" required></p>
+
+			<p>Sexo: <input type="text" name=sexo size="20" placeholder="Escriba su género" required></p>
+
+			<p>Nacionalidad: <input type="text" name="nacionalidad" size="20" placeholder="Escriba su nacionalidad"
+					required></p>
+
+			<p>Teléfono <input type="tel" name="teléfono" size="30" placeholder="Escriba su número de teléfono"></p>
+
+			<p>Email: <input type="email" name="email" size="35" placeholder="Escriba un correo electrónico de contacto"
+					required></p>
+
+			<p>Calificación de página<input type="range" name="rango" min="1" max="100" step="33"></p>
+			<p><textarea name="texto" rows="8" cols="60">Escriba su opinión</textarea></p>
+
+			<p><b>Registro de usuario</b></p>
+
+			<p>Usuario <input type="text" name="usuario" maxlength="10" placeholder="Escriba un usuario" required></p>
+			<p>Contraseña <input type="password" name="password" minlength="6" placeholder="Escriba una contraseña"
+					required></p>
+
+			<p>Por haber terminado de completar el formulario eliga una de las siguientes recompensas:</p>
+			<select>
+				<option value="0" selected>...</option>
+				<option value="1">Opción1</option>
+				<option value="2">Opción2</option>
+				<option value="3">Opción3</option>
+			</select>
+
+			<br /><br /><br /><br />
+
+			<select name="menu" size="4">
+				<option value="0" selected>...</option>
+				<option value="1">Lamborghini Aventador</option>
+				<option value="2">1 mes de vacaciones alrededor del mundo</option>
+				<option value="3">Una casa en una isla paradisíaca</option>
+			</select>
+
+			<br /><br /><br /><br />
+
+			<select name="menu[]" size="5" multiple>
+				<option value="1">Uno</option>
+				<option value="2">Dos</option>
+				<option value="3">Tres</option>
+				<option value="4">Cuatro</option>
+				<option value="5">Cinco</option>
+			</select>
+
+			<br /><br /><br /><br />
+
+			<!-- Un simple ejemplo de un label con el atributo for -->
+			<label>Esto es un label<input type="text" id="Name" name="Name" /></label>
+
+
+			<p>Suscribirme al abono mensual de la página <input type="checkbox" name=prueba value="Enviar"></p>
+			<p>¿Desea recibir información sobre nuevas mejoras? <input type="checkbox" name=prueba value="Enviar"
+					checked></p>
+			<p>Declaro haber leído los términos de uso y aceptarlos marcando la siguiente casilla: <input type="radio"
+					name=prueba value="Enviar" required></p>
+
+			<input type="reset" value="Borrar"> </br>
+			<!--La única diferencia entre input y button es que button puede contener imágenes mientras que input sólo texto.-->
+			<input type="submit" name="Enviar" value="Enviar" <br /><br />
+
+			<button type="button">
+				<img src="img/programming.jpg" alt="Programming" width="30" height="20" style="vertical-align: middle">
+				Este botón no hace nada
+			</button>
+		</form>
+	</div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
